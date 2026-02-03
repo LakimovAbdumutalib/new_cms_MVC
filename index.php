@@ -29,7 +29,7 @@ elseif($action == 'home'){
     $postController->index();
 }
 elseif ($action == 'users') {
-    $userController->index();
+    $userController->allUsers();
 } 
 elseif ($action == 'delete_user'){
     $userController->delete();
@@ -37,6 +37,12 @@ elseif ($action == 'delete_user'){
 elseif ($action == 'posts'){
     $postController->index();
 } 
+elseif ($action == 'publish'){
+    $postController->publish();
+}
+elseif($action == 'readPost'){
+    $postController->readPost();
+}
 elseif ($action == 'add_post'){
     $postController->add();
 }
